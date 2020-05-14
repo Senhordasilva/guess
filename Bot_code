@@ -1,0 +1,28 @@
+
+
+import random
+loops = 0
+
+while True:
+  print(' Guess a number between 1 and 9. Including 1 and 9: ')
+  guess = random.randint(1,9) #bot
+  num = random.randint(1,9)
+  loops += 1
+
+  if guess == num:
+    print("Well done")
+    print("only", loops)
+    break
+   
+  elif guess > num:
+    print("Too high")
+    print("only", loops)
+  
+  elif guess < num:
+    print("Too low")
+    print("only", loops)
+   
+  else:
+    print("Don\'t type in bullshit, mate")
+    print("only", loops)
+    break
